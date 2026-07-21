@@ -1,0 +1,58 @@
+find the value of
+:11111011
+
+1 2 4 8 16 32 64 128
+
+As unsigned value:
+
+1 1 0 1  1  1  1  1
+
+
+128
+ 64
+ 32
+ 16
+  8
+  2
+  1
+=====
+  251 -- the value of 11111011 unsigned
+
+
+  11111011
+  00000100
+  + 1
+ --> 00000101
+  ===========
+    sign 1 -> negavtive
+    value --> -5
+
+
+==========
+
+01001001 --> value: 73
+
+=====
+11010000
+
+
+128
+ 64
+ 16
+===
+208 -- unsigned
+===
+
+
+11010000
+00101111 - flip the bits and add 1
+      +1  --> right most bit  1 + 1 = 10
+      so 0 is write and 1 is carry
+
+
+00110000
+=========
+sign - 1
+ -48 = signed value of 11010000
+
+
