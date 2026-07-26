@@ -1,0 +1,12 @@
+encode negative:
+
+ binary representation of value -12
+
+ +12 value = 00 00 11 00
+  add + 1  = 00 00 11 01
+
+  flip the bits
+
+  11110010
+
+
