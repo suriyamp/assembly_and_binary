@@ -1,0 +1,22 @@
+.intel_syntax noprefix
+
+mov rcx, 0
+mov rdi, [rsp+16]
+
+MYLOOP:
+ mov al, BYTE PTR [rdi]
+ test al, al
+ jz EXIT
+ inc rdi
+ inc rcx
+ jmp MYLOOP
+
+
+EXIT:
+ mov rdi, rcx
+ mov rax, 60
+ syscall
+
+
+
+
