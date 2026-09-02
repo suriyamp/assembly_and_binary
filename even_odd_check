@@ -1,0 +1,19 @@
+.intel_syntax noprefix
+
+.global solve
+
+solve:
+mov rax, rdi
+and rax, 1
+jz is_even
+jnz is_odd
+
+is_odd:
+mov rax, 0
+ret
+
+is_even:
+mov rax, 1
+ret
+
+
